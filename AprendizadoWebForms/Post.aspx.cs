@@ -14,7 +14,7 @@ namespace AprendizadoWebForms
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.RequestType == "POST")
+            if (Request.RequestType == "POST" && IsPostBack)
             {
                 pPersonName = PersonName.Value;
                 pPrintItRed = PrintItRed.Checked;
